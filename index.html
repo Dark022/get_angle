@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Angle</title>
+</head>
+<body>
+    <div class="d-flex container">
+        <div class="d-flex frame">
+            <div class="d-flex ga-top">
+                <div class="d-flex ga-title">
+                    <h3>Get angle º value with specific time.</h3>
+                </div>              
+                <button id="clbutton" class="change-layout" type="button">Change Layout</button>
+            </div>
+
+            
+                <form class="d-flex ga-form" id="form" name="form">
+                    <div id="hourcon" name="hourcon" class="d-flex hr-mn">
+                        Hours
+                        <br>
+                        <input id="hours" name="hours" type="text" placeholder="Hours" maxlength="2">
+                    </div>
+                    
+                    <div id="mincon" name="mincon" class="d-flex hr-mn">
+                        Minutes
+                        <br>  
+                        <input id="minutes" name="minutes" type="text" placeholder="Minutes" maxlength="2">
+                    </div>                   
+                </form>
+            
+
+            <button id="sibutton" class="si-button" type="submit">Send Information</button>
+
+            <div class="d-flex ga-bottom"></div>
+        </div>    
+    </div>
+   
+    <script src="/js/application.js"></script>
+</body>
+</html>

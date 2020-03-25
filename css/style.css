@@ -1,0 +1,118 @@
+body{
+    background-color: #e6e6e6;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.frame{
+    background-color: white;
+    width: 600px;
+    height: auto;
+    box-shadow: 0 10px 10px rgb(149, 147, 147);
+    align-items: center;
+    border-radius: 5px;
+    flex-flow: column wrap;
+}
+
+.container{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.ga-top{
+    height: 70px;
+    width: 500px;
+    font-family: 'Helvetica';
+    color: #787878;
+    border-bottom: solid 1px #e6e6e6;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ga-title{
+    font-size: medium;
+}
+
+.change-layout{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: solid 1px #46B02C;
+    border-radius: 5px;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #46B02C;
+    background-color: white;
+    transition-duration: 1s;
+    
+}
+
+.change-layout:hover{
+    cursor: pointer;
+    background-color: #46B02C;
+    border: solid 1px #46B02C;
+    color: white;
+}
+
+.si-button:hover{
+    background-color: rgb(52, 128, 33);   
+    cursor: pointer;
+}
+
+.ga-form{
+    width: 500px;
+    height: 60px;
+    justify-content: space-between;
+    margin-top: 5px;
+    flex-flow: row wrap;
+}
+
+.hr-mn{
+    flex-flow: column wrap;
+    color: #787878;
+    font-family: 'Helvetica';
+    font-weight: lighter;
+    font-size: small;
+    height: 60px;
+}
+
+input{
+    padding-left: 7px;
+    width: 230px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: solid 1px #787878;
+    outline: none;
+}
+
+.si-button{
+    width: 500px;
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #46B02C;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    transition-duration: 1s;
+}
+
+.ga-bottom{
+    width: 500px;
+    height: 180px;
+    border: solid 1px #46B02C;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
