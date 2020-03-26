@@ -16,8 +16,9 @@
                 <button id="clbutton" class="change-layout" type="button">Change Layout</button>
             </div>
 
-            
-                <form class="d-flex ga-form" id="form" name="form">
+            <div id="brq" class="d-flex brequest">Bad Request</div>
+
+            <form class="d-flex ga-form" id="form" name="form">
                     <div id="hourcon" name="hourcon" class="d-flex hr-mn">
                         Hours
                         <br>
@@ -29,12 +30,16 @@
                         <br>  
                         <input id="minutes" name="minutes" type="text" placeholder="Minutes" maxlength="2">
                     </div>                   
-                </form>
+            </form>
             
-
             <button id="sibutton" class="si-button" type="submit">Send Information</button>
 
-            <div class="d-flex ga-bottom"></div>
+            <div class="d-flex ga-bottom">
+                <p id="p">Add hours and minutes to get an angle.</p>
+                <div id="angle" class="d-flex final-angle">0º</div>
+            </div>
+
+            
         </div>    
     </div>
    
