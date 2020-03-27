@@ -32,10 +32,10 @@ const sbutton = document.getElementById("sibutton");
 const badRequestElement = document.getElementById("brq");
 
 sbutton.addEventListener('click',() =>{
+    badRequestElement.setAttribute("style", "display: none;");
     const hoursValue = document.getElementById("hours").value;
     const minutesValue = document.getElementById("minutes").value;
     let totalAngle;
-
     const totalAngleObj = new Clock (hoursValue, minutesValue);
     totalAngle = totalAngleObj.calculateAngle()
 
@@ -43,11 +43,10 @@ sbutton.addEventListener('click',() =>{
         badRequestElement.setAttribute("style", "display: flex;");
     }
     else{
-        console.log(totalAngle)
         document.getElementById("p").innerHTML = `<span>At <span class="green">${hoursValue}</span> <span class="green">Hours</span> with <span class="green">${minutesValue}</span> <span class="green">Minutes</span> there is an angle of: </span>`;
-        document.getElementById("angle").innerHTML = `${totalAngle}º`;
+        document.getElementById("angle").innerHTML = `${totalAngle}º`;     
     }
-    totalAngle = 0.0;
+    totalAngle = 0.0;   
 });
 
 class Clock{
