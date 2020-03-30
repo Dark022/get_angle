@@ -60,13 +60,9 @@ class Clock{
             const minutesAngle = (6 * this.minutes);
             return Math.abs((hourAngle - minutesAngle));
         }
-        else{
             return false;
-        }   
     }
 }
-
-
 
 /*
 var sbutton = document.getElementById("sibutton");
